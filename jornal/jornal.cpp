@@ -14,6 +14,11 @@ void jornal::inicializarsprite()
 
 void jornal::inicializardados()
 {
+	if (gRecursos.carregouFonte("fonte"))
+	{
+		gRecursos.carregarFonte("fonte", "../assets/assets/pixelplay.ttf");
+
+	}
 
 	titulo.setFonte("fonte");
 	titulo.setString("titulo");
